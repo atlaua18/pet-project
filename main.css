@@ -1,0 +1,157 @@
+ body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff1e6;
+  /* width: 100%; */
+  /* height: 100%; */
+} 
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.burger_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.sidenav {
+  position: fixed;
+  background-color: #ddbea9;
+  height: 100%;
+  width: 0; /*ИСПРАВИТЬ НА НОЛЬ, А В JS СДЕЛАТЬ 250*/
+  z-index: 1; /* Оставайтесь сверху */
+  top: 0; /* Оставайтесь наверху */
+  left: 0;
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  padding-top: 60px; /* Поместите контент в 60px сверху */
+  transition: 0.5s; /* 0.5 второй эффект перехода слайда в боковой навигации */
+}
+
+.sidenav250 {
+  width: 250px;
+}
+
+.common_menu_link {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  color: #f0efeb;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #8e9aaf;
+}
+
+.menu_footer {
+  /* width: 50px;
+  height: 50px;
+  background: #aaa; */
+  position: absolute;
+  bottom: 65px;
+  /* Центрирование */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu_icon_link {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.main_content {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 55px;
+  color: #8e9aaf;
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.main_content250 {
+  margin-left: 260px;
+}
+
+.wrap {
+  flex: 1 1 auto;
+  border: 1px solid #8e9aaf;
+  flex-flow: column nowrap;
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+}
+
+
+
+
+
+
+/*.nav {
+    background-color:dimgrey;
+    width: 30%;
+    height: 100%;
+} */
+
+/* .toggle-button {
+    position: fixed;
+    width: 44px;
+    height: 40px;
+    padding: 4px;
+    transition: .25s;
+    z-index: 15;
+  }
+  .toggle-button:hover {
+    cursor: pointer;
+  }
+  .toggle-button .menu-bar {
+    position: absolute;
+    border-radius: 2px;
+    width: 80%;
+    transition: .5s;
+  }
+  .toggle-button .menu-bar-top {
+    border: 4px solid #555;
+    border-bottom: none;
+    top: 0;
+  }
+  .toggle-button .menu-bar-middle {
+    height: 4px;
+    background-color: #555;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    top: 4px;
+  }
+  .toggle-button .menu-bar-bottom {
+    border: 4px solid #555;
+    border-top: none;
+    top: 22px;
+  }
+  .button-open .menu-bar-top {
+    transform: rotate(45deg) translate(8px, 8px);
+    transition: .5s;
+  }
+  .button-open .menu-bar-middle {
+    transform: translate(230px);
+    transition: .1s ease-in;
+    opacity: 0;
+  }
+  .button-open .menu-bar-bottom {
+    transform: rotate(-45deg) translate(8px, -7px);
+    transition: .5s;
+  } */

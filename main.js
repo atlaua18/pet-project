@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
     let menuIcon = document.querySelector('.burger_menu');
     menuIcon.addEventListener('click', () => {
         document.getElementById("mySidenav").classList.toggle('sidenav250');
-        // document.getElementById("mySidenav").style.width = "250px";
-        // document.getElementById("main").style.marginLeft = "250px";
         document.getElementById("main").classList.toggle('main_content250');
     });
 });

@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <script defer src="./main.js"></script>
+    <script defer src="./weather/weather.js"></script>
     <title>Document</title>
 </head>
 
@@ -18,15 +23,19 @@
     </div>
     <div id="mySidenav" class="sidenav">
         <div class="common_menu">
-            <a class="common_menu_link" target="_blank" href="#">Game</a>
-            <a class="common_menu_link" target="_blank" href="#">Game</a>
-            <a class="common_menu_link" target="_blank" href="#">Game</a>
-            <a class="common_menu_link" target="_blank" href="#">Game</a>
-            <a class="common_menu_link" target="_blank" href="#">Game</a>
-            <a class="common_menu_link" target="_blank" href="#">Game</a>
-            <a class="common_menu_link" target="_blank" href="#">Game</a>
-            <a class="common_menu_link" target="_blank" href="#">Game</a>
-            <a class="common_menu_link" target="_blank" href="#">Game</a>
+            <a class="common_menu_link" href="#temperature">Погода</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
+            <a class="common_menu_link" href="#">Game</a>
         </div>
         <div class="menu_footer">
             <a target="_blank" href="https://ru-ru.facebook.com/">
@@ -41,7 +50,13 @@
         </div>
     </div>
     <div id="main" class="main_content wrap">
-        ОСНОВНОЙ КОНТЕНТ
+        <div id="temperature" class="about_temperature">
+            <h2>Погода в Санкт-Петербурге</h2>
+            <div class="temp"></div>
+            <div class="description">
+                <img class="icon" alt="иконка">
+            </div>
+        </div>
     </div>
 </body>
 

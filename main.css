@@ -1,7 +1,9 @@
  body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff1e6;
+  background: rgb(255,232,214);
+  background: linear-gradient(0deg, rgba(255,232,214,1) 0%, rgba(165,165,141,1) 100%);
 } 
 
 a {
@@ -23,7 +25,7 @@ a {
 
 .sidenav {
   position: fixed;
-  background-color: #ecdcd0;
+  background-color: inherit;
   height: 100%;
   width: 0; /*ИСПРАВИТЬ НА НОЛЬ, А В JS СДЕЛАТЬ 250*/
   z-index: 1; /* Оставайтесь сверху */
@@ -37,14 +39,13 @@ a {
 
   background-image: url(./img/pngfuel.аеп\ ррcom\ \(25\).png);
   background-repeat: no-repeat;
-  /* background-position: top; */
   background-position: right;
-  background-size: cover;
-  /* background-size: contain; */
+  object-fit: cover;
+  /* background-size: cover; */
 }
 
 .sidenav a:hover {
-  color: #8e9aaf;
+  color: #000000;
 }
 
 .sidenav250 {
@@ -62,8 +63,9 @@ a {
 }
 
 .menu_footer {
-  position: absolute;
-  bottom: 65px;
+  position: relative;
+  /* position: absolute; */
+  /* bottom: -40%; */
   /* Центрирование */
   left: 0;
   right: 0;
@@ -79,7 +81,6 @@ a {
   height: 40px;
   cursor: pointer;
   margin: 11px;
-  /* background-color: ivory; */
 }
 
 .main_content {
@@ -87,7 +88,6 @@ a {
   margin-right: 10px;
   margin-bottom: 10px;
   margin-left: 55px;
-  color: #8e9aaf;
   transition: margin-left .5s;
   padding: 20px;
 }
@@ -102,4 +102,24 @@ a {
   flex-flow: column nowrap;
   height: 100vh;
   display: flex;
+}
+
+.about_temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.158);
+
+  background-image: url(./img/weather-forecasting-climate-weather-map-world-weather-map-4e9bd774e45ae24e0c73edd53537323d.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 300px;
+
+  border: 1px solid #8e9aaf;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.temp {
+  font-size: 30px;
 }

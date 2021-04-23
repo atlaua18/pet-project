@@ -118,8 +118,17 @@ a {
   border: 1px solid #8e9aaf;
   border-radius: 20px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .temp {
   font-size: 30px;
+}
+
+.about_clock {
+  border: 1px solid #8e9aaf;
+  background-color: rgba(255, 255, 255, 0.158);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
 }

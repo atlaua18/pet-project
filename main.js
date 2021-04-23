@@ -1,4 +1,4 @@
-import weather from "./weather.js";
+// import weather from "./weather/weather.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     let menuIcon = document.querySelector('.burger_menu');

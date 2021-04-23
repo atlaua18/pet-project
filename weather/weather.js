@@ -1,10 +1,12 @@
-export default document.addEventListener('DOMContentLoaded', async () => {
+// export default 
+document.addEventListener('DOMContentLoaded', async () => {
+
     const divDeg = document.querySelector('.temp');
     const imgIcon = document.querySelector('.icon');
 
     function getCelsius(obj) {
         let celsius = Math.round(obj.main.temp - 273.15);
-        if(celsius > 0) {
+        if (celsius > 0) {
             divDeg.innerHTML = '+' + celsius + '&#8451;';
         } else {
             divDeg.innerHTML = Math.round(obj.main.temp - 273.15) + '&#8451;';
